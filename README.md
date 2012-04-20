@@ -13,6 +13,7 @@ This example uses:
 
 - ruby
 - bundler
+- [Twitter Ruby gem](http://twitter.rubyforge.org/)
 - [Sinatra](http://www.sinatrarb.com/) as the framework
 - redis as a datastore
 - [Twitter Bootstrap](http://twitter.github.com) for visual loveliness
