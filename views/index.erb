@@ -1,0 +1,28 @@
+<h3>Enter two Twitter usernames</h3>
+
+<form method="get" action="/follows" class="well form-horizontal" style="width: 60%">
+Does <span class="input-prepend"><span class="add-on">@</span><input type="text" name="user1" placeholder="user1" class="span2"></span> 
+follow <span class="input-prepend"><span class="add-on">@</span><input type="text" name="user2" class="span2" placeholder="user2"></span> ? 
+<input type="submit" class="btn btn-small primary" value="Check">
+</form>
+
+<div id="leaderboard">
+  <h3>Top Ten user queries</h3>
+  <table class="table table-striped table-bordered" style="width: 60%">
+    <thead>
+	  <tr><th style="width: 10%">#</th><th style="width: 90%">Twitter handle</th></tr>
+	</thead>
+    <tbody>
+      <% @leaders.each_with_index do |leader, index| %>
+      <tr><td><%= index+1 %></td><td><a href="http://twitter.com/<%= leader %>"><%= leader %></td></tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="well" style="width: 60%">
+<%
+  host = ENV['VCAP_APP_HOST']
+  port = ENV['VCAP_APP_PORT'] %>
+  <%= "<h4>This VCAP instance running at #{host}:#{port}</h4>" %>
+</div>
