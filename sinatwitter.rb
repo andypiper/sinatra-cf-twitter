@@ -1,5 +1,3 @@
-$KCODE = "U"
-
 require 'rubygems'
 require 'twitter'
 require 'sinatra'
@@ -15,7 +13,7 @@ configure do
     @@redis = Redis.new redis_conf
 end
 
-# disable :protection # disables Rack::Protection
+disable :protection # disables Rack::Protection
 
 helpers do
     def twitter_id(screen_name)

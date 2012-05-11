@@ -3,7 +3,6 @@
 <head>
   <title>Who Follows...</title>
   <link rel='shortcut icon' href='/favicon.png' type='image/png' />
-  <link href="bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap.css" rel="stylesheet">
   <style>
     table { table-layout: fixed; }
@@ -14,24 +13,32 @@
   <script src="bootstrap.js"></script>
 </head>
 
-<body style="padding-top: 50px;">
-  <section id="navigation">
-	<div class="topbar-wrapper" style="z-index: 5;">
-	  <div class="topbar" data-dropdown="dropdown">
-	    <div class="topbar-inner">
+<body>
+	<div class="navbar" style="z-index: 1;">
+		<a href="https://github.com/andypiper/sinatra-cf-twitter"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 3;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+	    <div class="navbar-inner">
 	      <div class="container">
-	        <h3><a href="/">Who Follows...?</a></h3>
+	        <a id="connected" :href="#" class="brand">Who Follows...?</a>
+	        <ul class="nav">
+		      <li class="dropdown">
+			    <a data-toggle="dropdown" href="#">Built with <b class="caret"></b></a>
+			    <ul class="dropdown-menu">
+			  	  <li><a href="https://my.cloudfoundry.com/signup/hack" target="_blank">Cloud Foundry</a></li>
+				  <li><a href="http://www.sinatrarb.com/" target="_blank">Sinatra</a></li>
+				  <li><a href="http://redis.io/" target="_blank">Redis</a></li>
+				  <li><a href="http://twitter.github.com" target="_blank">Bootstrap</a></li>
+			    </ul>
+			  </li>
+		    </ul>
 	      </div>
-	    </div><!-- /topbar-inner -->
-	  </div><!-- /topbar -->
-	</div><!-- /topbar-wrapper -->
-  </section>
+	    </div><!-- /navbar-inner -->
+	  </div><!-- /navbar -->
 
   <div class="container">
 	<div>
     <%= yield %>
     </div>
   </div>
-	
+
 </body>	
 </html>
