@@ -15,7 +15,7 @@ This example uses:
 - Bundler
 - [Twitter Ruby gem](https://github.com/sferik/twitter)
 - [Sinatra](http://www.sinatrarb.com/) as the framework
-- Redis as a datastore
+- Redis as a cache/datastore
 - [Bootstrap](http://getbootstrap.com) for visual loveliness
 - the latest version of the [cf CLI](https://console.run.pivotal.io/tools)
 
