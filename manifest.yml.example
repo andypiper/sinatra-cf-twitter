@@ -1,0 +1,12 @@
+---
+applications:
+- name: whofollows
+  memory: 128M
+  instances: 2
+  services:
+  - your-redis-service-name
+  env:
+    TW_CONSUMER_KEY: your-consumer-key
+    TW_CONSUMER_SECRET: your-consumer-secret
+    TW_ACCESS_TOKEN: your-access-token
+    TW_ACCESS_TOKEN_SECRET: your-access-token-secret
