@@ -59,6 +59,7 @@ The following issues are known:
 
 A few areas could be tided up:
 
+- local deployment option (needs local Redis)
 - better error handling
 - no real need for the query to direct to a separate page, make this dynamic
 - add a static page with some background information on how it works
