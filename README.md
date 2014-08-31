@@ -10,11 +10,11 @@ There is an example deployed at <http://twhofollows.cfapps.io>
 
 This example uses:
 
-- Ruby
+- Ruby 2+
 - Bundler
 - [Twitter Ruby gem](https://github.com/sferik/twitter)
 - [Sinatra](http://www.sinatrarb.com/) as the framework
-- Redis as a cache/datastore
+- Redis as the cache/datastore
 - [Bootstrap](http://getbootstrap.com) for visual loveliness
 - the latest version of the [cf CLI](https://console.run.pivotal.io/tools) for deployment to Cloud Foundry
 
